@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Práctica de Validación</title>
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #a5cfbb;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    h3 {
+     text-align: center;
+
+    }
+
+    table {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #baaac9;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e0e0e0;
+    }
+  </style>
+
+</head>
+<body>
+ <h2>Lista del supermercado</h2>
+ <label>Nombre:</label>
+ <input type="text" id="nombre">
+ <label>precio:</label>
+ <input type="text" id="precio">
+ <label>cantidad:</label>
+ <input type="text" id="cantidad">
+ <button type="button" onclick="guardar()">guardar</button>
+
+<br>
+ <h3 id="Lista">Lista</h3> 
+
+
+ <script>
+ function guardar() {
+ const nombre = document.getElementById("nombre").value.trim();
+ const precio = document.getElementById("precio").value.trim();
+ const cantidad = document.getElementById("cantidad").value.trim();
+
+ // Validar campos vacíos
+ if (nombre === "" || precio === "" || cantidad === "") {
+
+ alert("Por favor completa todos los campos.");
+ return;
+ }
+ function guardar(){
+    alert("fue");
+
+ // Validar si la edad es un número
+ 
+ if (isNaN(precio)) {
+ alert("La edad debe ser un número válido.");
+ return;
+ }
+ // 
+
+ }
+ }
+ </script>
+</body>
+</html>
